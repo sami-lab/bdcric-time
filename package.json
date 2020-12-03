@@ -1,0 +1,41 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@wojtekmaj/react-daterange-picker": "^3.0.0",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "chart.js": "^2.9.4",
+    "dateformat": "^4.0.0",
+    "he": "^1.2.0",
+    "ignore-styles": "^5.0.1",
+    "jquery": "^3.5.1",
+    "jquery-sticky": "^1.0.4",
+    "moment-timezone": "^0.5.32",
+    "next": "^10.0.0",
+    "nprogress": "^0.2.0",
+    "object-encrypt-decrypt": "^1.0.2",
+    "popper.js": "^1.16.1",
+    "react": "16.13.1",
+    "react-chartjs": "^1.2.0",
+    "react-chartjs-2": "^2.11.1",
+    "react-device-detect": "^1.14.0",
+    "react-dom": "16.13.1",
+    "react-live-clock": "^5.0.13",
+    "react-loader-spinner": "^3.1.14",
+    "react-loading-skeleton": "^2.1.1",
+    "react-moment": "^1.0.0",
+    "react-share": "^4.3.1",
+    "react-typing-effect": "^2.0.4",
+    "s-age": "^1.1.2",
+    "slick-carousel": "^1.8.1"
+  }
+}
