@@ -162,10 +162,14 @@ function Tags(props) {
 }
 export async function getServerSideProps({ params }) {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const res = await axios.get(
       'https://www.bdcrictime.com/wp-json/wp/v2/posts?tags=' +
         params.tagId +
-        '&_embed'
+        '&_embed',
+      param
     );
 
     return {

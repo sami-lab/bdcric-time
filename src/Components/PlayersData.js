@@ -29,10 +29,13 @@ function PlayersData() {
 
   async function getPlayers() {
     axios
-      .get('https://rest.entitysport.com/v2/players?country=bd')
+      .get('https://rest.entitysport.com/v2/players?country=bd', {
+        params: { token: '437214169d9be2a73e91d22f76f68b52' },
+      })
       .then((res) => {
         setPlayers(res.data.response.items);
-      });
+      })
+      .catch((err) => console.log('Error in PlayerData' + err.message));
   }
 
   useEffect(() => {
@@ -64,7 +67,7 @@ function PlayersData() {
                 {item.title ? (
                   <>
                     <span>
-                      <img src="/assets/img/player-img.svg" alt={item.title} />
+                      <img src="/img/player-img.svg" alt={item.title} />
                     </span>
                     <Link
                       href={
@@ -82,7 +85,7 @@ function PlayersData() {
                 ) : (
                   <>
                     <span>
-                      <img src="/assets/img/player-img.svg" alt="" />
+                      <img src="/img/player-img.svg" alt="" />
                     </span>
                     <p style={{ marginLeft: '15px' }}>
                       <Skeleton width={150} />

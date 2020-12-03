@@ -19,7 +19,8 @@ function CardFetchById(props) {
           .then((res2) => {
             setNews(res2.data);
             setLoaded(true);
-          });
+          })
+          .catch((err) => console.log('Error in CardFetchById' + err.message));
       }
     }
     getNews();
@@ -35,7 +36,7 @@ function CardFetchById(props) {
           thumbnail={
             loaded
               ? news._embedded['wp:featuredmedia'][0].source_url
-              : '/assets/img/newsupdate thumbnail.png'
+              : '/img/newsupdate thumbnail.png'
           }
           headline={loaded ? news.title.rendered : null}
           leadText={

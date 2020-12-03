@@ -17,10 +17,15 @@ function RankingTable(props) {
 
   useEffect(() => {
     async function getRank() {
-      axios.get('https://rest.entitysport.com/v2/iccranks').then((res) => {
-        setRanking(res.data.response.ranks);
-        setLoaded(true);
-      });
+      axios
+        .get('https://rest.entitysport.com/v2/iccranks', {
+          params: { token: '437214169d9be2a73e91d22f76f68b52' },
+        })
+        .then((res) => {
+          setRanking(res.data.response.ranks);
+          setLoaded(true);
+        })
+        .catch((err) => console.log('Error in Ranking Table' + err.message));
     }
     getRank();
   }, []);

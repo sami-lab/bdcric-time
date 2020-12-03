@@ -12,7 +12,8 @@ function RelatedNews() {
       .then((res) => {
         setNews(res.data);
         setLoaded(true);
-      });
+      })
+      .catch((err) => console.log('Error in RelatedNews' + err.message));
   }
 
   useEffect(() => {

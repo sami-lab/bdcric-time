@@ -4,12 +4,12 @@ import Link from 'next/link';
 import Head from 'next/head';
 import axios from 'axios';
 
-import MatchCards from '../../../src/Components/MatchCards';
-import MostPopular from '../../../src/Components/MostPopular';
-import LatestNews from '../../../src/Components/LatestNews';
-import NewsCards from '../../../src/Components/NewsCards';
-import Heros from '../../../src/Components/Heros';
-import NavLink from '../../../src/pages/ActiveLink';
+import MatchCards from '../../../../src/Components/MatchCards';
+import MostPopular from '../../..//../src/Components/MostPopular';
+import LatestNews from '../../../../src/Components/LatestNews';
+import NewsCards from '../../../../src/Components/NewsCards';
+import Heros from '../../../../src/Components/Heros';
+import NavLink from '../../../../src/pages/ActiveLink';
 
 function SeriesDetails(props) {
   //IF THIS(error) PROPS AVAILABLE YOU CAN RENDER ERROR VIEW ANYWHERE
@@ -1526,7 +1526,7 @@ function SeriesDetails(props) {
                   <div className="news-widget tbl-responsive-purpose">
                     <div className="single-group-list stats">
                       <div className="cat-select">
-                        <select name id="">
+                        <select name="" id="">
                           <option value>Most Runs</option>
                           <option value>Most Wickets</option>
                           <option value>Most Sixes</option>
@@ -1816,8 +1816,12 @@ function SeriesDetails(props) {
 }
 export async function getServerSideProps({ params }) {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const competitions = await axios.get(
-      'https://rest.entitysport.com/v2/competitions/' + params.seriesId
+      'https://rest.entitysport.com/v2/competitions/' + params.seriesId,
+      param
     );
     const res2 = await axios.get(
       'https://images.shadowbangladesh.com/v2/logo/' +
@@ -1828,15 +1832,16 @@ export async function getServerSideProps({ params }) {
     const matches = await axios.get(
       'https://rest.entitysport.com/v2/competitions/' +
         params.seriesId +
-        '/matches'
+        '/matches',
+      param
     );
 
     const standings = await axios.get(
       'https://rest.entitysport.com/v2/competitions/' +
         params.seriesId +
-        '/standings'
+        '/standings',
+      param
     );
-
     return {
       props: {
         competitions: competitions.data.response,
@@ -1849,6 +1854,7 @@ export async function getServerSideProps({ params }) {
       },
     };
   } catch (err) {
+    console.log(err.message);
     return {
       props: {
         error: err.message,

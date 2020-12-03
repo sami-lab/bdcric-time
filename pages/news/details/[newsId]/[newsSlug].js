@@ -135,7 +135,7 @@ function NewsDetails(props) {
                         src={
                           loaded
                             ? news._embedded['wp:featuredmedia'][0].source_url
-                            : '/assets/img/post-thumbnail.svg'
+                            : '/img/post-thumbnail.svg'
                         }
                         alt=""
                       />
@@ -159,8 +159,8 @@ function NewsDetails(props) {
                                   loaded
                                     ? news.acf.avatar
                                       ? news.acf.avatar
-                                      : '/assets/img/avater.svg'
-                                    : '/assets/img/avater.svg'
+                                      : '/img/avater.svg'
+                                    : '/img/avater.svg'
                                 }
                                 alt=""
                               />
@@ -392,10 +392,7 @@ function NewsDetails(props) {
                                     {comments.map((comment) => (
                                       <div className="comment-text-blk">
                                         <div className="cm-user">
-                                          <img
-                                            src="/assets/img/avater.svg"
-                                            alt=""
-                                          />
+                                          <img src="/img/avater.svg" alt="" />
                                           <div className="cm-info">
                                             <h4>
                                               {comment.name}{' '}
@@ -457,17 +454,21 @@ function NewsDetails(props) {
 }
 export async function getServerSideProps({ req, params }) {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const url =
       'https://www.bdcrictime.com/wp-json/wp/v2/posts?slug=' +
       params.newsSlug +
       '&_embed';
-    const res = await axios.get(url);
+    const res = await axios.get(url, param);
 
     const res2 = await axios.get(
       'https://api.shadowbangladesh.com/get_comment',
       {
         params: {
           url: req.url,
+          token: '437214169d9be2a73e91d22f76f68b52',
         },
       }
     );
@@ -475,7 +476,7 @@ export async function getServerSideProps({ req, params }) {
     return {
       props: {
         news: res.data[0],
-        comment: res2.data,
+        comments: res2.data,
         commntsLoaded: true,
         loaded: true,
       },

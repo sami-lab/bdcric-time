@@ -9,12 +9,17 @@ function ICCTeamRanking() {
   const [loaded, setLoaded] = useState(false);
 
   async function getRank() {
-    axios.get('https://rest.entitysport.com/v2/iccranks').then((res) => {
-      setOdiRanking(res.data.response.ranks.teams.odis);
-      setT20Ranking(res.data.response.ranks.teams.tests);
-      setTestRanking(res.data.response.ranks.teams.t20s);
-      setLoaded(true);
-    });
+    axios
+      .get('https://rest.entitysport.com/v2/iccranks', {
+        params: { token: '437214169d9be2a73e91d22f76f68b52' },
+      })
+      .then((res) => {
+        setOdiRanking(res.data.response.ranks.teams.odis);
+        setT20Ranking(res.data.response.ranks.teams.tests);
+        setTestRanking(res.data.response.ranks.teams.t20s);
+        setLoaded(true);
+      })
+      .catch((err) => console.log('Error in ICCTeamRanking' + err.message));
   }
 
   useEffect(() => {

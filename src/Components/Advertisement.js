@@ -6,7 +6,7 @@ function Advertisement(props) {
       {props.size === 970 ? (
         <div style={props.style}>
           <img
-            src="/assets/advertisement/ad-970x90.png"
+            src="/advertisement/ad-970x90.png"
             alt="ad"
             style={props.imgstyle}
           />
@@ -14,7 +14,7 @@ function Advertisement(props) {
       ) : props.size === 728 ? (
         <div style={props.style}>
           <img
-            src="/assets/advertisement/ad-728x90.png"
+            src="/advertisement/ad-728x90.png"
             alt="ad"
             style={props.imgstyle}
           />
@@ -22,7 +22,7 @@ function Advertisement(props) {
       ) : props.size === 32050 ? (
         <div style={props.style}>
           <img
-            src="/assets/advertisement/ad-320x50.png"
+            src="/advertisement/ad-320x50.png"
             alt="ad"
             style={props.imgstyle}
           />
@@ -30,7 +30,7 @@ function Advertisement(props) {
       ) : props.size === 320100 ? (
         <div style={props.style}>
           <img
-            src="/assets/advertisement/ad-320x100.png"
+            src="/advertisement/ad-320x100.png"
             alt="ad"
             style={props.imgstyle}
           />
@@ -38,7 +38,7 @@ function Advertisement(props) {
       ) : props.size === 46860 ? (
         <div style={props.style}>
           <img
-            src="/assets/advertisement/ad-468x60.png"
+            src="/advertisement/ad-468x60.png"
             alt="ad"
             style={props.imgstyle}
           />
@@ -46,7 +46,7 @@ function Advertisement(props) {
       ) : props.size === 72890 ? (
         <div style={props.style}>
           <img
-            src="/assets/advertisement/ad-728x90.png"
+            src="/advertisement/ad-728x90.png"
             alt="ad"
             style={props.imgstyle}
           />

@@ -9,11 +9,14 @@ function LatestNews() {
 
   async function getNews() {
     axios
-      .get('https://www.bdcrictime.com/wp-json/wp/v2/posts?per_page=5&_embed')
+      .get('https://www.bdcrictime.com/wp-json/wp/v2/posts?per_page=5&_embed', {
+        params: { token: '437214169d9be2a73e91d22f76f68b52' },
+      })
       .then((res) => {
         setNews(res.data);
         setLoaded(true);
-      });
+      })
+      .catch((err) => console.log('Error in Live News' + err.message));
   }
 
   useEffect(() => {

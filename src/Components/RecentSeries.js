@@ -9,10 +9,13 @@ function RecentSeries() {
   useEffect(() => {
     function getSeries() {
       axios
-        .get('https://rest.entitysport.com/v2/seasons/2020/competitions')
+        .get('https://rest.entitysport.com/v2/seasons/2020/competitions', {
+          params: { token: '437214169d9be2a73e91d22f76f68b52' },
+        })
         .then((res) => {
           setSeries(res.data.response.items);
-        });
+        })
+        .catch((err) => console.log('Error in Recent Series' + err.message));
     }
     getSeries();
   }, []);

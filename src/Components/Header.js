@@ -146,7 +146,7 @@ function Header() {
                     style={{ marginLeft: '15px' }}
                   >
                     <img
-                      src="/assets/img/sponsor.svg"
+                      src="/img/sponsor.svg"
                       alt=""
                       style={{ height: '70px' }}
                     />

@@ -21,7 +21,10 @@ function LiveScoreSlider() {
           'https://rest.entitysport.com/v2/matches/?per_page=100&date=' +
             yesterday +
             '_' +
-            tomorrow
+            tomorrow,
+          {
+            params: { token: '437214169d9be2a73e91d22f76f68b52' },
+          }
         )
         .then((res) => {
           var filtered = res.data.response.items.filter(function (item) {
@@ -83,7 +86,8 @@ function LiveScoreSlider() {
                 },
               ],
             });
-        });
+        })
+        .catch((err) => console.log('Error in Live Score' + err.message));
     }
     getLiveMatches();
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import Link from 'next/link';
 import axios from 'axios';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
@@ -2458,34 +2459,45 @@ function MatchDetails(props) {
 
 export async function getServerSideProps({ params }) {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const match = await axios.get(
-      'https://rest.entitysport.com/v2/matches/' + params.matchId + '/scorecard'
+      'https://rest.entitysport.com/v2/matches/' +
+        params.matchId +
+        '/scorecard',
+      param
     );
 
     const live = await axios.get(
-      'https://rest.entitysport.com/v2/matches/' + params.matchId + '/live'
+      'https://rest.entitysport.com/v2/matches/' + params.matchId + '/live',
+      param
     );
 
     const commentry1 = await axios.get(
       'https://rest.entitysport.com/v2/matches/' +
         params.matchId +
-        '/innings/1/commentary'
+        '/innings/1/commentary',
+      param
     );
 
     const commentry2 = await axios.get(
       'https://rest.entitysport.com/v2/matches/' +
         params.matchId +
-        '/innings/2/commentary'
+        '/innings/2/commentary',
+      param
     );
 
     const statistics = await axios.get(
       'https://rest.entitysport.com/v2/matches/' +
         params.matchId +
-        '/statistics'
+        '/statistics',
+      param
     );
 
     const squads = await axios.get(
-      'https://rest.entitysport.com/v2/matches/' + params.matchId + '/squads'
+      'https://rest.entitysport.com/v2/matches/' + params.matchId + '/squads',
+      param
     );
 
     return {

@@ -41,9 +41,7 @@ function Lead(props) {
             <a>
               <img
                 src={
-                  props.thumbnail
-                    ? props.thumbnail
-                    : '/assets/img/post-thumbnail.svg'
+                  props.thumbnail ? props.thumbnail : '/img/post-thumbnail.svg'
                 }
                 alt={props.imageAlt ? props.imageAlt : ''}
               />
@@ -109,7 +107,7 @@ function BoxedDown(props) {
                   src={
                     props.thumbnail
                       ? props.thumbnail
-                      : '/assets/img/newsupdate thumbnail.svg'
+                      : '/img/newsupdate thumbnail.svg'
                   }
                   alt={props.imageAlt ? props.imageAlt : ''}
                 />
@@ -180,9 +178,7 @@ function BoxedSide(props) {
                   <a>
                     <img
                       src={
-                        props.thumbnail
-                          ? props.thumbnail
-                          : '/assets/img/post-img2.svg'
+                        props.thumbnail ? props.thumbnail : '/img/post-img2.png'
                       }
                       alt={props.imageAlt ? props.imageAlt : ''}
                     />

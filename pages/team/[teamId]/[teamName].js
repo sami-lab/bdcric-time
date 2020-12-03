@@ -154,7 +154,7 @@ function Team(props) {
                                 <a>
                                   {' '}
                                   <img
-                                    src="assets/img/newsupdate thumbnail.png"
+                                    src="/img/newsupdate thumbnail.png"
                                     alt="img"
                                   />
                                 </a>
@@ -191,7 +191,7 @@ function Team(props) {
                                 <a>
                                   {' '}
                                   <img
-                                    src="assets/img/newsupdate thumbnail.png"
+                                    src="/img/newsupdate thumbnail.png"
                                     alt="img"
                                   />
                                 </a>
@@ -228,7 +228,7 @@ function Team(props) {
                                 <a>
                                   {' '}
                                   <img
-                                    src="assets/img/newsupdate thumbnail.png"
+                                    src="/img/newsupdate thumbnail.png"
                                     alt="img"
                                   />
                                 </a>
@@ -266,10 +266,7 @@ function Team(props) {
                               <Link href="#">
                                 <a>
                                   {' '}
-                                  <img
-                                    src="assets/img/post-img2.png"
-                                    alt="img"
-                                  />
+                                  <img src="/img/post-img2.png" alt="img" />
                                 </a>
                               </Link>
                             </div>
@@ -305,10 +302,7 @@ function Team(props) {
                               <Link href="#">
                                 <a>
                                   {' '}
-                                  <img
-                                    src="assets/img/post-img2.png"
-                                    alt="img"
-                                  />
+                                  <img src="/img/post-img2.png" alt="img" />
                                 </a>
                               </Link>
                             </div>
@@ -342,10 +336,7 @@ function Team(props) {
                             <div className="img">
                               <Link href="#">
                                 <a>
-                                  <img
-                                    src="assets/img/post-img2.png"
-                                    alt="img"
-                                  />
+                                  <img src="/img/post-img2.png" alt="img" />
                                 </a>
                               </Link>
                             </div>
@@ -381,10 +372,7 @@ function Team(props) {
                               <Link href="#">
                                 <a>
                                   {' '}
-                                  <img
-                                    src="assets/img/post-img2.png"
-                                    alt="img"
-                                  />
+                                  <img src="/img/post-img2.png" alt="img" />
                                 </a>
                               </Link>
                             </div>
@@ -621,8 +609,11 @@ function Team(props) {
 
 export async function getServerSideProps({ params }) {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const url = 'https://rest.entitysport.com/v2/teams/' + params.teamId;
-    const res = await axios.get(url);
+    const res = await axios.get(url, param);
     return {
       props: {
         team: res.data.response,

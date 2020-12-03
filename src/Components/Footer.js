@@ -150,7 +150,7 @@ function Footer() {
                             window.open('https://www.instagram.com/bdcrictime')
                           }
                         >
-                          <img src="/assets/img/instagram.png" alt="" />
+                          <img src="/img/instagram.png" alt="" />
                         </a>
                       </Link>
                       <Link href="#">

@@ -71,7 +71,7 @@ function Stats(props) {
                 <div className="news-widget tbl-responsive-purpose">
                   <div className="single-group-list stats">
                     <div className="cat-select">
-                      <select name id>
+                      <select name="id">
                         <option value>Most Runs</option>
                         <option value>Most Wickets</option>
                         <option value>Most Sixes</option>

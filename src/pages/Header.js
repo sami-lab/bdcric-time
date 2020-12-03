@@ -1,19 +1,6 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Clock from 'react-live-clock';
-import dynamic from 'next/dynamic';
-
-let $;
-dynamic(
-  () => {
-    $ = import('jquery');
-    import('jquery-sticky');
-    import('bootstrap/dist/js/bootstrap.min.js');
-  },
-  {
-    ssr: false,
-  }
-);
 
 function Header() {
   useEffect(() => {

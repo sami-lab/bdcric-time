@@ -30,11 +30,15 @@ function Default(props) {
           .get(
             'https://images.shadowbangladesh.com/v2/player/' +
               props.name +
-              '.jpg'
+              '.jpg',
+            {
+              params: { token: '437214169d9be2a73e91d22f76f68b52' },
+            }
           )
           .then((res2) => {
             setImageAvailable(true);
-          });
+          })
+          .catch((err) => console.log('Error in Player Card' + err.message));
       }
     }
     getLogo();

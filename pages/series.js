@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+const ReactTypingEffect = dynamic(() => import('react-typing-effect'), {
+  ssr: false,
+});
 import Head from 'next/head';
 import axios from 'axios';
 import Loader from 'react-loader-spinner';
-import ReactTypingEffect from 'react-typing-effect';
 
-import MostPopular from '../Components/MostPopular';
-import LatestNews from '../Components/LatestNews';
+import MostPopular from '../src/Components/MostPopular';
+import LatestNews from '../src/Components/LatestNews';
 import SeriesBox from '../src/pages/SeriesBox';
 
 import Error from '../src/pages/Error';
@@ -130,7 +133,9 @@ export async function getServerSideProps() {
   try {
     const url =
       'https://rest.entitysport.com/v2/competitions?per_page=500&paged=1';
-    const res = await axios.get(url);
+    const res = await axios.get(url, {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    });
     return {
       props: {
         series: res.data.response.items.reverse(),

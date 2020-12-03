@@ -26,7 +26,9 @@ function Profile() {
   return (
     <>
       <Head>
-        <title>{user.user_display_name + ' - BDCricTime'}</title>
+        <title>
+          {user ? user.user_display_name + ' - BDCricTime' : 'BDCricTime'}
+        </title>
       </Head>
       {/*    login-area-stert*/}
       <div className="login-area">
@@ -52,7 +54,7 @@ function Profile() {
                         Logged In As
                         <br />
                         <h3 style={{ color: '#07888A' }}>
-                          {user.user_display_name}
+                          {user ? user.user_display_name : ''}
                         </h3>
                       </div>
                     </div>

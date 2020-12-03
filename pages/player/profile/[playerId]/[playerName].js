@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import Skeleton from 'react-loading-skeleton';
 import age from 's-age';
 import axios from 'axios';
@@ -515,9 +516,9 @@ function Player(props) {
 
   return (
     <>
-      <Helmet>
+      <Head>
         <title>{loaded ? player.title + ' - BDCricTime' : null}</title>
-      </Helmet>
+      </Head>
       <div className="news-content-area fx-padding">
         <div className="container-fluid">
           <div className="row">
@@ -565,8 +566,12 @@ function Player(props) {
 
 export async function getServerSideProps({ params }) {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const res = await axios.get(
-      'https://rest.entitysport.com/v2/players/' + params.playerId + '/stats'
+      'https://rest.entitysport.com/v2/players/' + params.playerId + '/stats',
+      param
     );
 
     return {

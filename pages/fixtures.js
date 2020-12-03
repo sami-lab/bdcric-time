@@ -143,9 +143,12 @@ function Fixtures(props) {
 }
 export async function getServerSideProps() {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const url =
       'https://rest.entitysport.com/v2/matches/?status=1&per_page=20&paged=1';
-    const res = await axios.get(url);
+    const res = await axios.get(url, param);
     return {
       props: {
         matches: res.data.response.items,

@@ -10,7 +10,7 @@ import MatchCards from '../src/Components/MatchCards';
 import Error from '../src/pages/Error';
 import dateFormat from 'dateformat';
 
-function Results() {
+function Results(props) {
   const today = [...Array(10)].map((_, i) => {
     const d = new Date();
     d.setDate(d.getDate() - i);
@@ -81,28 +81,34 @@ function Results() {
                         props.matches.map((item, index) => (
                           <MatchCards
                             format="default"
-                            id={loaded ? item.match_id : null}
-                            team1={loaded ? item.teama.name : null}
+                            id={props.loaded ? item.match_id : null}
+                            team1={props.loaded ? item.teama.name : null}
                             team1ShortName={
-                              loaded ? item.teama.short_name : null
+                              props.loaded ? item.teama.short_name : null
                             }
-                            team1Logo={loaded ? item.teama.logo_url : null}
-                            team1Score={loaded ? item.teama.scores : null}
-                            team1Over={loaded ? item.teama.overs : null}
-                            team2={loaded ? item.teamb.name : null}
+                            team1Logo={
+                              props.loaded ? item.teama.logo_url : null
+                            }
+                            team1Score={props.loaded ? item.teama.scores : null}
+                            team1Over={props.loaded ? item.teama.overs : null}
+                            team2={props.loaded ? item.teamb.name : null}
                             team2ShortName={
-                              loaded ? item.teamb.short_name : null
+                              props.loaded ? item.teamb.short_name : null
                             }
-                            team2Logo={loaded ? item.teamb.logo_url : null}
-                            team2Score={loaded ? item.teamb.scores : null}
-                            team2Over={loaded ? item.teamb.overs : null}
-                            status={loaded ? item.status_note : null}
-                            state={loaded ? item.status_str : null}
-                            series={loaded ? item.competition.title : null}
-                            title={loaded ? item.title : null}
-                            matchName={loaded ? item.short_title : null}
-                            startTime={loaded ? item.date_start : null}
-                            statusCode={loaded ? item.status : null}
+                            team2Logo={
+                              props.loaded ? item.teamb.logo_url : null
+                            }
+                            team2Score={props.loaded ? item.teamb.scores : null}
+                            team2Over={props.loaded ? item.teamb.overs : null}
+                            status={props.loaded ? item.status_note : null}
+                            state={props.loaded ? item.status_str : null}
+                            series={
+                              props.loaded ? item.competition.title : null
+                            }
+                            title={props.loaded ? item.title : null}
+                            matchName={props.loaded ? item.short_title : null}
+                            startTime={props.loaded ? item.date_start : null}
+                            statusCode={props.loaded ? item.status : null}
                           />
                         ))
                       ) : (
@@ -140,9 +146,12 @@ function Results() {
 
 export async function getServerSideProps() {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const url =
       'https://rest.entitysport.com/v2/matches/?status=2&per_page=20&paged=1';
-    const res = await axios.get(url);
+    const res = await axios.get(url, param);
     return {
       props: {
         matches: res.data.response.items,

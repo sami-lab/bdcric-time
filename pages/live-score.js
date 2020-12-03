@@ -130,7 +130,10 @@ function LiveScore(props) {
 export async function getServerSideProps() {
   try {
     const url = 'https://rest.entitysport.com/v2/matches/?status=3';
-    const res = await axios.get(url);
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
+    const res = await axios.get(url, param);
     return {
       props: {
         matches: res.data.response.items,

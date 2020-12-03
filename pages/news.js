@@ -172,13 +172,17 @@ function News(props) {
 }
 export async function getServerSideProps() {
   try {
+    const param = {
+      params: { token: '437214169d9be2a73e91d22f76f68b52' },
+    };
     const url = 'https://www.bdcrictime.com/wp-json/wp/v2/menus';
-    const res = await axios.get(url);
+    const res = await axios.get(url, param);
     if (res && res.data) {
       const news = await axios.get(
         'https://www.bdcrictime.com/wp-json/wp/v2/posts?categories=' +
           res.data[0].object_id +
-          '&_embed'
+          '&_embed',
+        param
       );
       return {
         props: {

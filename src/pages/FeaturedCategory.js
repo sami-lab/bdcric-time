@@ -15,7 +15,8 @@ function FeaturedCategory() {
       .then((res) => {
         setNews(res.data);
         setLoaded(true);
-      });
+      })
+      .catch((err) => console.log('Error in FeaturesCategory' + err.message));
   }
 
   useEffect(() => {

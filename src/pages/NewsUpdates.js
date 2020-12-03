@@ -13,7 +13,8 @@ function NewsUpdates() {
         .get('https://www.bdcrictime.com/wp-json/acf/v3/posts/152839')
         .then((res) => {
           setNews(res.data.acf.top_news);
-        });
+        })
+        .catch((err) => console.log('Error in NewsUpdates' + err.message));
     }
     getNews();
   }, []);

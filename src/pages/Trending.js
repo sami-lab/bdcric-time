@@ -11,7 +11,8 @@ function Trending() {
       .then((res) => {
         setNews(res.data);
         setLoaded(true);
-      });
+      })
+      .catch((err) => console.log('Error in Trending' + err.message));
   }
 
   useEffect(() => {

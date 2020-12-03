@@ -23,7 +23,8 @@ function LeadSection() {
             .then((res2) => {
               setLeadNews(res2.data);
               setLoaded(true);
-            });
+            })
+            .catch((err) => console.log('Error in LeadSection' + err.message));
         });
     }
     getLeadNews();
@@ -88,7 +89,7 @@ function LeadSection() {
                 thumbnail={
                   loaded
                     ? leadNews._embedded['wp:featuredmedia'][0].source_url
-                    : '/assets/img/post-thumbnail.svg'
+                    : '/img/post-thumbnail.svg'
                 }
                 headline={loaded ? he.decode(leadNews.title.rendered) : null}
                 leadText={

@@ -39,24 +39,16 @@ export default function MyApp(props) {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
-    axios.interceptors.request.use((config) => {
-      if (config.url.includes('https://rest.entitysport.com/')) {
-        config.params = { token: '437214169d9be2a73e91d22f76f68b52' };
-      }
-      return config;
-    });
   }, []);
-
+  axios.interceptors.request.use((config) => {
+    if (config.url.includes('https://rest.entitysport.com/')) {
+      config.params = { token: '437214169d9be2a73e91d22f76f68b52' };
+    }
+    return config;
+  });
   return (
     <React.Fragment>
       <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
-          integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
-          crossOrigin="anonymous"
-        />
-        ;
         <title>
           Live Cricket Scores, Latest News of Bangladesh and International
           Cricket - BDCricTime
