@@ -4,9 +4,11 @@ import he from 'he';
 import Link from 'next/link';
 import NewsCards from '../Components/NewsCards';
 
-function LeadSection() {
-  const [leadNews, setLeadNews] = useState([]);
-  const [loaded, setLoaded] = useState(false);
+function LeadSection(props) {
+  const [leadNews, setLeadNews] = useState(
+    props.leadNews ? props.leadNews : []
+  );
+  const [loaded, setLoaded] = useState(props.loaded ? props.loaded : false);
   const [activeMenu, setActiveMenu] = useState('Headline');
 
   useEffect(() => {

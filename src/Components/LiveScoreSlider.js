@@ -3,9 +3,11 @@ import axios from 'axios';
 import Link from 'next/link';
 import dateFormat from 'dateformat';
 
-function LiveScoreSlider() {
-  const [liveMatches, setLiveMatches] = useState([]);
-  const [loaded, setLoaded] = useState(false);
+function LiveScoreSlider(props) {
+  const [liveMatches, setLiveMatches] = useState(
+    props.liveMatches ? props.liveMatches : []
+  );
+  const [loaded, setLoaded] = useState(props.loaded ? props.loaded : false);
 
   useEffect(() => {
     console.log('This will run every second!');

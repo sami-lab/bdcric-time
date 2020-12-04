@@ -4,8 +4,9 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import he from 'he';
 import dateFormat from 'dateformat';
+import 'react-calendar/dist/Calendar.css';
+import '@wojtekmaj/react-daterange-picker/dist/DateRangePicker.css';
 import DateRangePicker from '@wojtekmaj/react-daterange-picker';
-
 import MostPopular from '../../../../src/Components/MostPopular';
 import LatestNews from '../../../../src/Components/LatestNews';
 import NewsCards from '../../../../src/Components/NewsCards';
@@ -69,8 +70,11 @@ function Author(props) {
     <>
       <Head>
         <title>
-          News of {history.query.author.replace(/-/g, ' ').toUpperCase()} -
-          BDCricTime
+          News of{' '}
+          {history.query.author
+            ? history.query.author.replace(/-/g, ' ').toUpperCase()
+            : null}{' '}
+          - BDCricTime
         </title>
       </Head>
       <div className="news-content-area fx-padding">
@@ -80,7 +84,12 @@ function Author(props) {
               <div className="news-widget">
                 <div className="title mb-0">
                   <div className="left">
-                    <h6>News of {history.query.author.replace(/-/g, ' ')}</h6>
+                    <h6>
+                      News of{' '}
+                      {history.query.author
+                        ? history.query.author.replace(/-/g, ' ')
+                        : null}
+                    </h6>
                     <span>Total News: {totalNews}</span>
                   </div>
                   <div className="right">
