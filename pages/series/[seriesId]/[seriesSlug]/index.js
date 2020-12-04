@@ -217,7 +217,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -235,7 +235,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -253,7 +253,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -271,7 +271,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -289,7 +289,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -307,7 +307,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -325,7 +325,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -343,7 +343,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -361,7 +361,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -379,7 +379,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -397,227 +397,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div className="single-group-list grp">
-                      <h3 className="grp-title">Group A</h3>
-                      <div className="grp-table">
-                        <table className="table table-striped">
-                          <thead>
-                            <tr>
-                              <th>Position</th>
-                              <th>Team</th>
-                              <th>Matches</th>
-                              <th className="d-n">Won</th>
-                              <th className="d-n">Lost</th>
-                              <th>N/R</th>
-                              <th className="d-n">Tied</th>
-                              <th className="d-n">Net RR</th>
-                              <th>Points</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
-                                <strong>
-                                  Ban <span className="srt-text">gladesh</span>
-                                </strong>
-                              </td>
-                              <td>3</td>
-                              <td className="d-n">3</td>
-                              <td className="d-n">0</td>
-                              <td className="d-n">0</td>
-                              <td>0</td>
-                              <td className="d-n">+3.598</td>
-                              <td>
-                                <strong>6</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -657,7 +437,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -675,7 +455,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -693,7 +473,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -711,7 +491,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -729,7 +509,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -747,7 +527,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -765,7 +545,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -783,7 +563,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -801,7 +581,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -819,7 +599,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -837,7 +617,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -877,7 +657,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -895,7 +675,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -913,7 +693,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -931,7 +711,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -949,7 +729,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -967,7 +747,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -985,7 +765,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -1003,7 +783,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -1021,7 +801,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -1039,7 +819,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -1057,7 +837,227 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/flag.svg" alt="" />
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div className="single-group-list grp">
+                      <h3 className="grp-title">Group A</h3>
+                      <div className="grp-table">
+                        <table className="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Position</th>
+                              <th>Team</th>
+                              <th>Matches</th>
+                              <th className="d-n">Won</th>
+                              <th className="d-n">Lost</th>
+                              <th>N/R</th>
+                              <th className="d-n">Tied</th>
+                              <th className="d-n">Net RR</th>
+                              <th>Points</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
+                                <strong>
+                                  Ban <span className="srt-text">gladesh</span>
+                                </strong>
+                              </td>
+                              <td>3</td>
+                              <td className="d-n">3</td>
+                              <td className="d-n">0</td>
+                              <td className="d-n">0</td>
+                              <td>0</td>
+                              <td className="d-n">+3.598</td>
+                              <td>
+                                <strong>6</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="/assets/img/flag.svg" alt="" />
                                 <strong>
                                   Ban <span className="srt-text">gladesh</span>
                                 </strong>
@@ -1170,11 +1170,11 @@ function SeriesDetails(props) {
                               <div className="single-team-info">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/flag.svg"
+                                  src="/assets/img/flag.svg"
                                   alt=""
                                 />
                                 <h3>
-                                  <img src="assets/img/ball.png" alt="" /> ban
+                                  <img src="/assets/img/ball.png" alt="" /> ban
                                   <span>gladesh</span>
                                 </h3>
                                 <p>
@@ -1187,12 +1187,12 @@ function SeriesDetails(props) {
                               <div className="single-team-info rt-blk">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/f-india.png"
+                                  src="/assets/img/f-india.png"
                                   alt=""
                                 />
                                 <h3>
                                   IND<span>ia</span>
-                                  <img src="assets/img/ball.png" alt="" />{' '}
+                                  <img src="/assets/img/ball.png" alt="" />{' '}
                                 </h3>
                                 <p>
                                   290 / 5 <br /> <span>(50 OVERS)</span>
@@ -1227,11 +1227,11 @@ function SeriesDetails(props) {
                               <div className="single-team-info">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/flag.svg"
+                                  src="/assets/img/flag.svg"
                                   alt=""
                                 />
                                 <h3>
-                                  <img src="assets/img/ball.png" alt="" /> ban
+                                  <img src="/assets/img/ball.png" alt="" /> ban
                                   <span>gladesh</span>
                                 </h3>
                                 <p>
@@ -1244,12 +1244,12 @@ function SeriesDetails(props) {
                               <div className="single-team-info rt-blk">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/f-india.png"
+                                  src="/assets/img/f-india.png"
                                   alt=""
                                 />
                                 <h3>
                                   IND<span>ia</span>
-                                  <img src="assets/img/ball.png" alt="" />{' '}
+                                  <img src="/assets/img/ball.png" alt="" />{' '}
                                 </h3>
                                 <p>
                                   290 / 5 <br /> <span>(50 OVERS)</span>
@@ -1284,11 +1284,11 @@ function SeriesDetails(props) {
                               <div className="single-team-info">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/flag.svg"
+                                  src="/assets/img/flag.svg"
                                   alt=""
                                 />
                                 <h3>
-                                  <img src="assets/img/ball.png" alt="" /> ban
+                                  <img src="/assets/img/ball.png" alt="" /> ban
                                   <span>gladesh</span>
                                 </h3>
                                 <p>
@@ -1301,12 +1301,12 @@ function SeriesDetails(props) {
                               <div className="single-team-info rt-blk">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/f-india.png"
+                                  src="/assets/img/f-india.png"
                                   alt=""
                                 />
                                 <h3>
                                   IND<span>ia</span>
-                                  <img src="assets/img/ball.png" alt="" />{' '}
+                                  <img src="/assets/img/ball.png" alt="" />{' '}
                                 </h3>
                                 <p>
                                   290 / 5 <br />
@@ -1342,11 +1342,11 @@ function SeriesDetails(props) {
                               <div className="single-team-info">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/flag.svg"
+                                  src="/assets/img/flag.svg"
                                   alt=""
                                 />
                                 <h3>
-                                  <img src="assets/img/ball.png" alt="" /> ban
+                                  <img src="/assets/img/ball.png" alt="" /> ban
                                   <span>gladesh</span>
                                 </h3>
                                 <p>
@@ -1359,12 +1359,12 @@ function SeriesDetails(props) {
                               <div className="single-team-info rt-blk">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/f-india.png"
+                                  src="/assets/img/f-india.png"
                                   alt=""
                                 />
                                 <h3>
                                   IND<span>ia</span>
-                                  <img src="assets/img/ball.png" alt="" />{' '}
+                                  <img src="/assets/img/ball.png" alt="" />{' '}
                                 </h3>
                                 <p>
                                   290 / 5 <br /> <span>(50 OVERS)</span>
@@ -1399,11 +1399,11 @@ function SeriesDetails(props) {
                               <div className="single-team-info">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/flag.svg"
+                                  src="/assets/img/flag.svg"
                                   alt=""
                                 />
                                 <h3>
-                                  <img src="assets/img/ball.png" alt="" /> ban
+                                  <img src="/assets/img/ball.png" alt="" /> ban
                                   <span>gladesh</span>
                                 </h3>
                                 <p>
@@ -1416,12 +1416,12 @@ function SeriesDetails(props) {
                               <div className="single-team-info rt-blk">
                                 <img
                                   className="fx-flag-img"
-                                  src="assets/img/f-india.png"
+                                  src="/assets/img/f-india.png"
                                   alt=""
                                 />
                                 <h3>
                                   IND<span>ia</span>
-                                  <img src="assets/img/ball.png" alt="" />{' '}
+                                  <img src="/assets/img/ball.png" alt="" />{' '}
                                 </h3>
                                 <p>
                                   290 / 5 <br /> <span>(50 OVERS)</span>
@@ -1555,7 +1555,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1569,7 +1569,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1583,7 +1583,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1597,7 +1597,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1611,7 +1611,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1625,7 +1625,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1639,7 +1639,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1685,7 +1685,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1699,7 +1699,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1713,7 +1713,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1727,7 +1727,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1741,7 +1741,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1755,7 +1755,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>
@@ -1769,7 +1769,7 @@ function SeriesDetails(props) {
                             <tr>
                               <td>1</td>
                               <td>
-                                <img src="assets/img/player-1.png" alt="" />
+                                <img src="/assets/img/player-1.png" alt="" />
                                 <strong>Batsman Name</strong>
                               </td>
                               <td>3</td>

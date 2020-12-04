@@ -4,9 +4,9 @@ import Head from 'next/head';
 import axios from 'axios';
 import he from 'he';
 
-import MostPopular from '../src/Components/MostPopular';
-import LatestNews from '../src/Components/LatestNews';
-import NewsCards from '../src/Components/NewsCards';
+import MostPopular from '../../../../src/Components/MostPopular';
+import LatestNews from '../../../../src/Components/LatestNews';
+import NewsCards from '../../../../src/Components/NewsCards';
 
 function Tags(props) {
   if (props.error) {
