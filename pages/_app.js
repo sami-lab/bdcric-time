@@ -16,6 +16,7 @@ dynamic(
     ssr: false,
   }
 );
+import '../src/assets/css/DateRangePicker.css';
 import '../src/assets/css/bootstrap.min.css';
 import '../src/assets/css/animate.css';
 import '../src/assets/css/style.css';

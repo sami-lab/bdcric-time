@@ -4,9 +4,10 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import he from 'he';
 import dateFormat from 'dateformat';
-import 'react-calendar/dist/Calendar.css';
+
+import DateRangePicker from '@wojtekmaj/react-daterange-picker/dist/entry.nostyle';
 import '@wojtekmaj/react-daterange-picker/dist/DateRangePicker.css';
-import DateRangePicker from '@wojtekmaj/react-daterange-picker';
+import 'react-calendar/dist/Calendar.css';
 import MostPopular from '../../../../src/Components/MostPopular';
 import LatestNews from '../../../../src/Components/LatestNews';
 import NewsCards from '../../../../src/Components/NewsCards';
