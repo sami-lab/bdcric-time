@@ -8,7 +8,6 @@ function LiveScoreSlider(props) {
     props.liveMatches ? props.liveMatches : []
   );
   const [loaded, setLoaded] = useState(props.loaded ? props.loaded : false);
-
   useEffect(() => {
     console.log('This will run every second!');
     const date = new Date();
