@@ -13,6 +13,7 @@ import Advertisement from '../../../../src/Components/Advertisement';
 import PlayerCard from '../../../../src/Components/PlayerCard';
 import ICCTeamRanking from '../../../../src/Components/ICCTeamRanking';
 import MostPopular from '../../../../src/Components/MostPopular';
+import Error from '../../../../src/pages/Error';
 
 function MatchDetails(props) {
   //IF THIS(error) PROPS AVAILABLE YOU CAN RENDER ERROR VIEW ANYWHERE

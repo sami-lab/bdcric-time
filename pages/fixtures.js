@@ -7,6 +7,7 @@ import LatestNews from '../src/Components/LatestNews';
 import MatchCards from '../src/Components/MatchCards';
 import MostPopular from '../src/pages/MostPopular';
 import dateFormat from 'dateformat';
+import Error from '../src/pages/Error';
 
 function Fixtures(props) {
   if (props.error) {

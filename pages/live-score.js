@@ -5,6 +5,7 @@ import ICCTeamRanking from '../src/Components/ICCTeamRanking';
 import MostPopular from '../src/Components/MostPopular';
 import LatestNews from '../src/Components/LatestNews';
 import MatchCards from '../src/Components/MatchCards';
+import Error from '../src/pages/Error';
 
 function LiveScore(props) {
   //IF THIS(error) PROPS AVAILABLE YOU CAN RENDER ERROR VIEW ANYWHERE

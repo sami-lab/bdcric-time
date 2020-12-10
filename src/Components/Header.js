@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import NavLink from '../pages/ActiveLink';
 import Skeleton from 'react-loading-skeleton';
 import he from 'he';
@@ -166,14 +165,14 @@ function Header() {
         <div className="header-top-main-wrapper fx-padding">
           <div className="container-fluid">
             <div className="main-menu-bar">
-              <nav className="navbar navbar-expand-lg">
+              <nav className="navbar navbar-dark navbar-expand-lg">
                 <button
                   className="navbar-toggler"
                   type="button"
                   data-toggle="collapse"
                   data-target="#navbarText"
                 >
-                  <span className="navbar-toggler-icon" />
+                  <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                   <div className="stkey-logo">
@@ -469,6 +468,7 @@ function Header() {
           </div>
         </div>
       </div>
+
       <div className="mobile-hs-menu fx-padding">
         <div className="container-fluid">
           <div className="row">

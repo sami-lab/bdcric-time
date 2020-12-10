@@ -7,6 +7,7 @@ import he from 'he';
 import MostPopular from '../../../../src/Components/MostPopular';
 import LatestNews from '../../../../src/Components/LatestNews';
 import NewsCards from '../../../../src/Components/NewsCards';
+import Error from '../../../../src/pages/Error';
 
 function Tags(props) {
   if (props.error) {

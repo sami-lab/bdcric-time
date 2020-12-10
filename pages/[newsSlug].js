@@ -16,6 +16,7 @@ import PlayersData from '../src/Components/PlayersData';
 import LatestNews from '../src/Components/LatestNews';
 import RelatedNews from '../src/pages/RelatedNews';
 import { isMobile } from 'react-device-detect';
+import Error from '../src/pages/Error';
 
 function NewsDetails(props) {
   //IF THIS(error) PROPS AVAILABLE YOU CAN RENDER ERROR VIEW ANYWHERE

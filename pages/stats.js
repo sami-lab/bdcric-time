@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import LatestNews from '../src/Components/LatestNews';
 import MostPopular from '../src/pages/MostPopular';
+import Error from '../src/pages/Error';
+
 // import $ from "jquery";
 // import '../assets/js/jquery.nice-select';
 

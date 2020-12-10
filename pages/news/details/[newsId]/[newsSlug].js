@@ -15,6 +15,8 @@ import Trending from '../../../../src/Components/Trending';
 import PlayersData from '../../../../src/Components/PlayersData';
 import LatestNews from '../../../../src/Components/LatestNews';
 import RelatedNews from '../../../../src/pages/RelatedNews';
+import Error from '../../../../src/pages/Error';
+
 import { isMobile } from 'react-device-detect';
 
 function NewsDetails(props) {

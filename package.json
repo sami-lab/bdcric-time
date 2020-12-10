@@ -8,8 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.13",
     "@wojtekmaj/react-daterange-picker": "^3.0.0",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
@@ -34,8 +32,12 @@
     "react-loading-skeleton": "^2.1.1",
     "react-moment": "^1.0.0",
     "react-share": "^4.3.1",
+    "react-slick": "^0.27.13",
     "react-typing-effect": "^2.0.4",
     "s-age": "^1.1.2",
     "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

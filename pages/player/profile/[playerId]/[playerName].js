@@ -8,6 +8,7 @@ import PlayerCard from '../../../../src/Components/PlayerCard';
 import LatestNews from '../../../../src/Components/LatestNews';
 import MostPopular from '../../../../src/Components/MostPopular';
 import ICCTeamRanking from '../../../../src/Components/ICCTeamRanking';
+import Error from '../../../../src/pages/Error';
 
 function Player(props) {
   //IF THIS(error) PROPS AVAILABLE YOU CAN RENDER ERROR VIEW ANYWHERE

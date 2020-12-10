@@ -5,11 +5,12 @@ import Head from 'next/head';
 import axios from 'axios';
 
 import MatchCards from '../../../../src/Components/MatchCards';
-import MostPopular from '../../..//../src/Components/MostPopular';
+import MostPopular from '../../../../src/Components/MostPopular';
 import LatestNews from '../../../../src/Components/LatestNews';
 import NewsCards from '../../../../src/Components/NewsCards';
 import Heros from '../../../../src/Components/Heros';
 import NavLink from '../../../../src/pages/ActiveLink';
+import Error from '../../../../src/pages/Error';
 
 function SeriesDetails(props) {
   //IF THIS(error) PROPS AVAILABLE YOU CAN RENDER ERROR VIEW ANYWHERE

@@ -13,12 +13,12 @@ import MostPopular from '../src/pages/MostPopular';
 import RelatedNews from '../src/pages/RelatedNews';
 import FeaturedCategory from '../src/pages/FeaturedCategory';
 import NewsUpdates from '../src/pages/NewsUpdates';
+import Error from '../src/pages/Error';
 
 function Homepage(props) {
   //const history = useRouter();
   //history.pathname will give you current path
   if (props.error) {
-    console.log(props.error);
     return <Error message={props.error} />;
   }
   return (
