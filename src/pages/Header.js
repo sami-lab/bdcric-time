@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Link from 'next/link';
+import NavLink from '../pages/ActiveLink';
 import Clock from 'react-live-clock';
 
 function Header() {
@@ -49,16 +49,16 @@ function Header() {
                         className="dropdown-menu"
                         aria-labelledby="dropdownMenuButton"
                       >
-                        <Link href="/bangla">
+                        <NavLink activeClassName="active-menu" href="/bangla">
                           <a className="dropdown-item"> Bangla</a>
-                        </Link>
+                        </NavLink>
                       </div>
                     </div>
                   </div>
                   <div className="login-btn">
-                    <Link href="/login">
+                    <NavLink activeClassName="active-menu" href="/login">
                       <a> LOGIN</a>
-                    </Link>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -74,11 +74,11 @@ function Header() {
             <div className="row">
               <div className="col-lg-12">
                 <div className="site-main-logo">
-                  <Link href="/">
+                  <NavLink activeClassName="active-menu" href="/">
                     <a>
                       <img src="/assets/img/site-main-logo.svg" alt="" />
                     </a>
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -102,30 +102,31 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                   <div className="stkey-logo">
-                    <Link href="/">
+                    <NavLink activeClassName="active-menu" href="/">
                       <a>
                         <img src="/assets/img/logo-whitetext-02.png" alt="" />
                       </a>
-                    </Link>
+                    </NavLink>
                   </div>
                   <ul className="site-main-menu navbar-nav mr-auto">
                     <li>
-                      <Link href="/">
+                      <NavLink activeClassName="active-menu" href="/">
                         <a>HOME</a>
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link href="/live-score">
+                      <NavLink activeClassName="active-menu" href="/news">
+                        <a>NEWS</a>
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink activeClassName="active-menu" href="/live-score">
                         <a>LIVE SCORES</a>
-                      </Link>
+                      </NavLink>
                     </li>
-                    <li>
-                      <Link href="/international">
-                        <a>INTERNATIONAL</a>
-                      </Link>
-                    </li>
+
                     <li className="nav-item dropdown">
-                      <Link href="/team">
+                      <NavLink activeClassName="active-menu" href="#">
                         <a
                           className="nav-link dropdown-toggle"
                           id="navbarDropdown"
@@ -136,12 +137,15 @@ function Header() {
                         >
                           TEAM
                         </a>
-                      </Link>
+                      </NavLink>
                       <div
                         className="dropdown-menu"
                         aria-labelledby="navbarDropdown"
                       >
-                        <Link href="/team/australia">
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/australia"
+                        >
                           <a className="dropdown-item">
                             Australia
                             <img
@@ -150,8 +154,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/bangladesh">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/bangladesh"
+                        >
                           <a className="dropdown-item">
                             Bangladesh
                             <img
@@ -160,8 +167,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/england">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/england"
+                        >
                           <a className="dropdown-item">
                             England
                             <img
@@ -170,8 +180,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/sri-lanka">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/sri-lanka"
+                        >
                           <a className="dropdown-item">
                             Sri Lanka
                             <img
@@ -180,8 +193,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/new-zealand">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/new-zealand"
+                        >
                           <a className="dropdown-item">
                             New Zealand
                             <img
@@ -190,8 +206,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/pakistan">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/pakistan"
+                        >
                           <a className="dropdown-item">
                             Pakistan
                             <img
@@ -200,8 +219,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/south-africa">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/south-africa"
+                        >
                           <a className="dropdown-item">
                             South Africa
                             <img
@@ -210,8 +232,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/india">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/india"
+                        >
                           <a className="dropdown-item">
                             India
                             <img
@@ -220,8 +245,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/ireland">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/ireland"
+                        >
                           <a className="dropdown-item">
                             IreLand
                             <img
@@ -230,8 +258,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/west-indies">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/west-indies"
+                        >
                           <a className="dropdown-item">
                             West Indies
                             <img
@@ -240,8 +271,11 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
-                        <Link href="/team/zimbabwe">
+                        </NavLink>
+                        <NavLink
+                          activeClassName="active-menu"
+                          href="/team/zimbabwe"
+                        >
                           <a className="dropdown-item">
                             Zimbabwe
                             <img
@@ -250,28 +284,33 @@ function Header() {
                               style={{ height: '30px' }}
                             />
                           </a>
-                        </Link>
+                        </NavLink>
                       </div>
                     </li>
                     <li>
-                      <Link href="/photos">
-                        <a>PHOTOS</a>
-                      </Link>
+                      <NavLink activeClassName="active-menu" href="/results">
+                        <a>RESULTS</a>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link href="/fixtures">
+                      <NavLink activeClassName="active-menu" href="/fixtures">
                         <a>FIXTURES</a>
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link href="/stats">
+                      <NavLink activeClassName="active-menu" href="/series">
+                        <a>SERIES</a>
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink activeClassName="active-menu" href="/stats">
                         <a>STATS</a>
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link href="/ranking">
+                      <NavLink activeClassName="active-menu" href="/ranking">
                         <a>RANKING</a>
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -294,39 +333,45 @@ function Header() {
             <div className="col-lg-12">
               <ul>
                 <li>
-                  <Link href="/">
-                    <a className="active"> HOME</a>
-                  </Link>
+                  <NavLink activeClassName="active" href="/">
+                    <a> HOME</a>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link href="/live-scores">
+                  <NavLink activeClassName="active" href="/news">
+                    <a>NEWS</a>
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="active" href="/live-score">
                     <a>LIVE SCORES</a>
-                  </Link>
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink activeClassName="active" href="/results">
+                    <a>RESULTS</a>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link href="/international">
-                    <a>INTERNATIONAL</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/team">
-                    <a>TEAM</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/photos">
-                    <a>PHOTOS</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/fixtures">
+                  <NavLink activeClassName="active" href="/fixtures">
                     <a>FIXTURES</a>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link href="/stats">
+                  <NavLink activeClassName="active" href="/series">
+                    <a>SERIES</a>
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="active" href="/ranking">
+                    <a>RANKING</a>
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="active" href="/stats">
                     <a>STATS</a>
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
