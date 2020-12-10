@@ -40,6 +40,7 @@ function SeriesDetails(props) {
   const [imageAvailable, setImageAvailable] = useState(
     props.imageAvailable ? props.imageAvailable : false
   );
+
   useEffect(() => {
     function getCompetitions() {
       axios
@@ -219,28 +220,81 @@ function SeriesDetails(props) {
                   </div>
                 </div>
                 <div className="news-main-content">
-                  <div className="news-widget">
-                    <div className="row">
-                      <div className="col-lg-4 col-md-6">
-                        <NewsCards format="boxed-down" />
+                  <div className="news-widget tbl-responsive-purpose">
+                    <div className="single-group-list grp">
+                      <h3 className="grp-title">Point Table</h3>
+                      <div className="grp-table">
+                        <table className="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Position</th>
+                              <th>Team</th>
+                              <th>Played</th>
+                              <th className="d-n">Won</th>
+                              <th className="d-n">Lost</th>
+                              <th>N/R</th>
+                              <th className="d-n">Tied</th>
+                              <th className="d-n">Net RR</th>
+                              <th>Points</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {standingsLoaded
+                              ? standings.standing_type === 'per_round'
+                                ? standings.standings.map((item, index) =>
+                                    item.standings.map((item, index) => (
+                                      <tr key={index}>
+                                        <td>{++index}</td>
+                                        <td>
+                                          <strong>
+                                            <span className="shortName">
+                                              {item.team.abbr}
+                                            </span>
+                                            <span className="fullName">
+                                              {item.team.title}
+                                            </span>
+                                          </strong>
+                                        </td>
+                                        <td>{item.player}</td>
+                                        <td className="d-n">{item.win}</td>
+                                        <td className="d-n">{item.o9ss}</td>
+                                        <td className="d-n">{item.nr}</td>
+                                        <td>{item.draw}</td>
+                                        <td className="d-n">{item.netrr}</td>
+                                        <td>
+                                          <strong>{item.points}</strong>
+                                        </td>
+                                      </tr>
+                                    ))
+                                  )
+                                : standings.standings.map((item, index) => (
+                                    <tr key={index}>
+                                      <td>{++index}</td>
+                                      <td>
+                                        <strong>
+                                          <span className="shortName">
+                                            {item.team.abbr}
+                                          </span>
+                                          <span className="fullName">
+                                            {item.team.title}
+                                          </span>
+                                        </strong>
+                                      </td>
+                                      <td>{item.player}</td>
+                                      <td className="d-n">{item.win}</td>
+                                      <td className="d-n">{item.o9ss}</td>
+                                      <td className="d-n">{item.nr}</td>
+                                      <td>{item.draw}</td>
+                                      <td className="d-n">{item.netrr}</td>
+                                      <td>
+                                        <strong>{item.points}</strong>
+                                      </td>
+                                    </tr>
+                                  ))
+                              : null}
+                          </tbody>
+                        </table>
                       </div>
-                      <div className="col-lg-4 col-md-6">
-                        <NewsCards format="boxed-down" />
-                      </div>
-                      <div className="col-lg-4 col-md-6">
-                        <NewsCards format="boxed-down" />
-                      </div>
-                    </div>
-                    <NewsCards format="boxed-side" />
-                    <NewsCards format="boxed-side" />
-                    <NewsCards format="boxed-side" />
-                    <NewsCards format="boxed-side" />
-                    <NewsCards format="boxed-side" />
-
-                    <div className="seemore-btn-inner">
-                      <Link href="#">
-                        <a className="ld-more-btn"> Load More</a>
-                      </Link>
                     </div>
                   </div>
                 </div>
@@ -274,10 +328,18 @@ export async function getServerSideProps({ params }) {
         '.png'
     );
 
+    const standings = await axios.get(
+      'https://rest.entitysport.com/v2/competitions/' +
+        params.seriesId +
+        '/standings',
+      param
+    );
     return {
       props: {
         competitions: competitions.data.response,
         imageAvailable: true,
+        standings: standings.data.response,
+        standingsLoaded: true,
         loaded: true,
       },
     };

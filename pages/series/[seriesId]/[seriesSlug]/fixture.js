@@ -40,6 +40,7 @@ function SeriesDetails(props) {
   const [imageAvailable, setImageAvailable] = useState(
     props.imageAvailable ? props.imageAvailable : false
   );
+
   useEffect(() => {
     function getCompetitions() {
       axios
@@ -221,26 +222,68 @@ function SeriesDetails(props) {
                 <div className="news-main-content">
                   <div className="news-widget">
                     <div className="row">
-                      <div className="col-lg-4 col-md-6">
-                        <NewsCards format="boxed-down" />
+                      <div className="col-lg-12">
+                        {fixtures[0] ? (
+                          fixtures.map((item, index) => (
+                            <MatchCards
+                              format="default"
+                              key={index}
+                              id={fixturesLoaded ? item.match_id : null}
+                              team1={fixturesLoaded ? item.teama.name : null}
+                              team1ShortName={
+                                fixturesLoaded ? item.teama.short_name : null
+                              }
+                              team1Logo={
+                                fixturesLoaded ? item.teama.logo_url : null
+                              }
+                              team1Score={
+                                fixturesLoaded ? item.teama.scores : null
+                              }
+                              team1Over={
+                                fixturesLoaded ? item.teama.overs : null
+                              }
+                              team2={fixturesLoaded ? item.teamb.name : null}
+                              team2ShortName={
+                                fixturesLoaded ? item.teamb.short_name : null
+                              }
+                              team2Logo={
+                                fixturesLoaded ? item.teamb.logo_url : null
+                              }
+                              team2Score={
+                                fixturesLoaded ? item.teamb.scores : null
+                              }
+                              team2Over={
+                                fixturesLoaded ? item.teamb.overs : null
+                              }
+                              status={fixturesLoaded ? item.status_note : null}
+                              state={fixturesLoaded ? item.status_str : null}
+                              series={
+                                fixturesLoaded ? item.competition.title : null
+                              }
+                              title={fixturesLoaded ? item.title : null}
+                              matchName={
+                                fixturesLoaded ? item.short_title : null
+                              }
+                              startTime={
+                                fixturesLoaded ? item.date_start : null
+                              }
+                              statusCode={fixturesLoaded ? item.status : null}
+                            />
+                          ))
+                        ) : (
+                          <div
+                            style={{
+                              fontWeight: 'bold',
+                              fontSize: '30px',
+                              color: '#cccccc',
+                              textAlign: 'center',
+                              padding: '100px',
+                            }}
+                          >
+                            NO MATCH IS LIVE NOW
+                          </div>
+                        )}
                       </div>
-                      <div className="col-lg-4 col-md-6">
-                        <NewsCards format="boxed-down" />
-                      </div>
-                      <div className="col-lg-4 col-md-6">
-                        <NewsCards format="boxed-down" />
-                      </div>
-                    </div>
-                    <NewsCards format="boxed-side" />
-                    <NewsCards format="boxed-side" />
-                    <NewsCards format="boxed-side" />
-                    <NewsCards format="boxed-side" />
-                    <NewsCards format="boxed-side" />
-
-                    <div className="seemore-btn-inner">
-                      <Link href="#">
-                        <a className="ld-more-btn"> Load More</a>
-                      </Link>
                     </div>
                   </div>
                 </div>
@@ -274,10 +317,19 @@ export async function getServerSideProps({ params }) {
         '.png'
     );
 
+    const fixtures = await axios.get(
+      'https://rest.entitysport.com/v2/competitions/' +
+        params.seriesId +
+        '/matches',
+      param
+    );
+
     return {
       props: {
         competitions: competitions.data.response,
         imageAvailable: true,
+        fixtures: fixtures.data.response.items,
+        fixturesLoaded: true,
         loaded: true,
       },
     };
